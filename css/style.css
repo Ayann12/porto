@@ -1,0 +1,145 @@
+:root {
+    --primary: burlywood;
+    --bg: rgba(0, 0, 255, 0.877);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    display: flex;
+    background: var(--primary);
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+    border-bottom: 2px solid navy;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 800;
+}
+
+.logo:hover {
+    color: var(--bg);
+}
+
+
+.navbar a {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: .3s;
+}
+
+.navbar a:hover {
+    color: var(--bg);
+}
+
+.navbar a.active {
+    color: var(--bg);
+}
+
+.home {
+    height: 100vh;
+    display: flex;
+    background: linear-gradient(-90deg, var(--primary) 65%, navy 35%);
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home-image {
+    background: var(--primary);
+    width: 500px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 25px solid navy;
+}
+
+.home-image img {
+    position: relative;
+    bottom: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-content {
+    max-width: 600px;
+    color: #fff;
+    text-align: right;
+}
+
+.home-content h1 {
+    font-size: 55px;
+    line-height: 1.2;
+}
+
+.home-content h3 {
+    font-size: 35px;
+    color: navy;
+    -webkit-text-stroke: .5px #fff;
+}
+
+.home-content p {
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.home-sci {
+    margin: 25px 0 40px;
+}
+
+.home-sci a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid navy;
+    border-radius: 50%;
+    font-size: 20px;
+    color: navy;
+    margin-left: 12px;
+
+}
+
+.home-sci a:hover {
+    background: navy;
+    color: #fff;
+    border-color: navy;
+    box-shadow: 0 0 10px #fff;
+}
+
+.btn {
+    padding: 12px 35px;
+    background: navy;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 0 0 10px #fff;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    background: #fff;
+    color: navy;
+    box-shadow: 0 0 10px navy;
+}
